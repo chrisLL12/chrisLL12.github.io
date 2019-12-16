@@ -1,22 +1,116 @@
 .App {
   text-align: center;
+  line-height: 2rem;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
+.content {
+  font-family: Georgia, Futura, sans-serif, Helvetica;
+  font-size: 1.2rem;
+  margin: 0 16% 0 16%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-family: Futura, Georgia, sans-serif, Helvetica;
+}
+
+.title {
+  font-family: Futura, Georgia, sans-serif, Helvetica;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.greeting {
+  font-weight: bold;
+  font-family: Futura, Georgia, sans-serif, Helvetica;
+}
+
+.button {
+  background-image: linear-gradient(to top, #03d 0%, #38f 100%);
+  color: #ffffff;
+  max-width: 95%;
+  font-family: Futura, Helvetica, Georgia, sans-serif;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+img {
+  max-width: 95%;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #03d;
+  width: 100%;
+  max-height: 5rem;
 }
 
-.App-link {
-  color: #09d3ac;
+.links {
+  display: flex;
+  width: 67%;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Futura, Helvetica, Georgia, sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
 }
+
+.nav-link {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  border-bottom: 0px solid transparent;
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.nav-link:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+footer a {
+  text-decoration: none;
+  color: #03d;
+  font-weight: bold;
+}
+
+footer a:hover {
+  border-bottom: 2px solid #38f;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 20px;
+}
+
+h4 {
+  font-family: Didot, serif;
+}
+
